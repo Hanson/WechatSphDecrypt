@@ -11,3 +11,9 @@
 方式一：参考 cos/README.MD,腾讯COS方式
 
 方式二：参考 bin/README.MD，本地返回原文件
+
+## 更新
+
+* 2024.12.20
+
+已支持直链播放，加微信 hansonskr
