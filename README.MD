@@ -16,4 +16,4 @@
 
 * 2024.12.20
 
-已支持直链播放，加微信 hansonskr
+已支持直链播放，https://wechat-finder.apifox.cn/5712567m0
