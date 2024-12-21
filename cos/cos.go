@@ -34,9 +34,13 @@ func putObject(objectId string, reader io.Reader) {
 	})
 
 	// Case1 上传对象
-	name := "sph/" + objectId + ".mp4"
+	name := objectId + ".mp4"
 
-	_, err := c.Object.Put(context.Background(), name, reader, nil)
+	_, err := c.Object.Put(context.Background(), name, reader, &cos.ObjectPutOptions{
+		ObjectPutHeaderOptions: &cos.ObjectPutHeaderOptions{
+			ContentType: "video/mp4",
+		},
+	})
 	if err != nil {
 		log.Printf("err: %+v", err)
 		return
