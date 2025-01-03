@@ -7,7 +7,6 @@
 如果不知道如何获取加密URL，可以看github开源项目，想要全自动化一点可以这个文档 https://www.apifox.cn/apidoc/shared-71b9855b-693c-48fc-858b-cde2c5afe5a8/api-34744242
 
 
-
 ## 使用
 
 方式一：参考 cos/README.MD,腾讯COS方式
@@ -18,14 +17,8 @@
 
 
 * 如何获取object_id？
+
 个微：https://www.apifox.cn/apidoc/shared-71b9855b-693c-48fc-858b-cde2c5afe5a8
+
 企微：https://www.apifox.cn/apidoc/shared-d478def0-67c1-4161-b385-eef8a94e9d17
 
-* 如何获取直链？
-获取直链可以用这个 https://wechat-finder.apifox.cn/5712567m0
-
-## 更新
-
-* 2024.12.20
-
-已支持直链播放，https://wechat-finder.apifox.cn/5712567m0
