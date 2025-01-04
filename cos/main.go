@@ -32,6 +32,7 @@ func main() {
 		}
 
 		decodeKey := gjson.GetBytes(b, "decodeKey").Uint()
+		objectId := gjson.GetBytes(b, "objectId").String()
 
 		urlResp, err := http.Get(gjson.GetBytes(b, "url").String())
 		if err != nil {
@@ -56,9 +57,9 @@ func main() {
 
 		wechatSphDecrypt.DecryptData(b, uint32(encLen), decodeKey)
 
-		putObject(gjson.GetBytes(b, "objectId").String(), bytes.NewReader(b))
+		putObject(objectId, bytes.NewReader(b))
 
-		respJson := fmt.Sprintf(`{"url": "%s/sph/%s.mp4"}`, Cfg.CosUrl, gjson.GetBytes(b, "objectId").String())
+		respJson := fmt.Sprintf(`{"url": "%s/%s.mp4"}`, Cfg.CosUrl, objectId)
 
 		w.Write([]byte(respJson))
 	})
