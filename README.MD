@@ -13,6 +13,8 @@
 
 方式二：参考 bin/README.MD，本地返回原文件
 
+方式三：参考 `js` 目录，使用JS解密，小程序端下载加密视频文件，然后解密获取原文件（节省带宽）
+
 ## Q&A
 
 
@@ -22,3 +24,6 @@
 
 企微：https://www.apifox.cn/apidoc/shared-d478def0-67c1-4161-b385-eef8a94e9d17
 
+* 如何获取加密视频文件？
+
+使用 https://www.apifox.cn/apidoc/shared-71b9855b-693c-48fc-858b-cde2c5afe5a8/api-34744242 调用接口获取视频链接，可直接下载 
